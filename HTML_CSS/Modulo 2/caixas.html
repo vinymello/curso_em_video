@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipo de Caixas</title>
+    <style>
+        /*
+            Paleta de Cores
+            #076B8F = Azul Escuro
+            #2BC7FF = Azul Claro
+            #0FA5DB = Azul
+            #8F4C04 = Laranja Escuro
+            #DB7100 = Laranja
+        */
+        body{
+            width: 800px;
+            margin: auto;
+            background-color: grey;
+        }
+        header{
+            /*border: 1px solid black;*/
+            box-shadow: 1px 1px 1px black;
+            padding: 5px;
+            margin: 5px;
+            background-color: #DB7100;
+            height: 120px;
+        }
+        nav{
+            /*border: 1px solid black;*/
+            box-shadow: 1px 1px 1px black;
+            padding: 5px;
+            margin: 5px;
+            background-color: #076B8F;
+            float: right;
+        }
+        main{
+            /*border: 1px solid black;*/
+            box-shadow: 1px 1px 1px black;
+            padding: 5px;
+            margin: 5px;
+            background-color: white;
+            height: 300px;
+        }
+        section{
+            display: inline-block;
+            /*border: 1px solid black;*/
+            padding: 5px;
+            margin: 5px;
+            background-color: #0FA5DB;
+            height: 260px;
+        }
+        article{
+            display: inline-block;
+            /*border: 1px solid black;*/
+            padding: 5px;
+            margin: 5px;
+            background-color: #2BC7FF;
+            width: 380px;
+            height: 220px;
+        }
+        aside{
+            display: inline-block;
+            /*border: 1px solid black;*/
+            padding: 5px;
+            margin: 5px;
+            background-color: #2BC7FF;
+            width: 150px;
+            height: 220px;
+        }
+        footer{
+            /*border: 1px solid black;*/
+            box-shadow: 1px 1px 1px black;
+            padding: 5px;
+            margin: 5px;
+            background-color: #DB7100;
+            height: 50px;
+        }
+        p{
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>Cabeçalho</p>
+        <nav>
+            <p>Navegação</p>
+        </nav>
+    </header>
+    <main>
+        <p>Principal</p>
+        <section>
+            <p>Sessão</p>
+            <article>
+                <p>Artigo</p>
+            </article>
+            <aside>
+                <p>Aside</p>
+            </aside>
+        </section>
+        <aside>
+            <p>Aside</p>
+        </aside>
+    </main>
+    <footer>
+        <p>Rodapé</p>
+    </footer>
+</body>
+</html>

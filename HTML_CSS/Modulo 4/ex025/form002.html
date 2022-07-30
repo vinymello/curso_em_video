@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iuser">Usuário: </label>
+            <input type="text" name="user" id="iuser" required minlength="5" maxlength="15" size="15" placeholder="Entre com seu usuário" autocomplete="username">
+            <!-- Sempre que um campo for obrigatório deve se utilizar o "REQUIRED" assim o input submit não irá funcionar até que este campo seja preenchido -->
+        </p>
+        <p>
+            <label for="ipwd">Senha: </label>
+            <input type="password" name="pwd" id="ipwd" required minlength="8" size="8" placeholder="Minimo 8 digitos" autocomplete="current-password">
+            <!-- 
+                1. MINLENGTH e MAXLENGTH serve para definir quantos caracteres serão permitidos no INPUT.
+                2. SIZE determina o tamanho da caixa INPUT.
+                3. PLACEHOLDER server para dar uma dica de preenchimento ao usuário.
+                4. AUTOCOMPLETE no INPUT serve para definir a funcionalidade da caixa.
+             -->
+        </p>
+        <p>
+            <input type="submit" name="send" id="isend" value="Enviar">
+            <input type="reset" name="clear" id="iclear" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
